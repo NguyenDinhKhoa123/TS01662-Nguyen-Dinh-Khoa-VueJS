@@ -1,11 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Form Mẫu</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
-          
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="row">
+        <div class="col-12 bg-warning p-3">
+            <h4>Header</h4>
+        </div>
+    </div>
+
+    <!-- NAV -->
+    <div class="row">
+        <div class="col-12 bg-primary text-white p-3">
+            <h5>Nav</h5>
+        </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="row" style="min-height: 300px;">
+        <!-- SIDEBAR -->
+                              <aside class="col-md-3">
+                                        <div class="card">
+                                                  <img class="card-img-top" src="images/avatar.png" alt="Avatar">
+                                                  <div class="card-body">
+                                                            <h4 class="card-title">Giới thiệu bản thân</h4>
+                                                            <p>TS01662. Nguyễn Đình khoa, Tiến sĩ Tin học. Chuyên nghiên
+                                                                      cứu về
+                                                                      trí tuệ nhân tạo. Sinh viên, ta thích học lập
+                                                                      trình và thiết kế web.</p>
+                                                            <a href="#" class="btn btn-primary">Chỉnh sửa</a>
+                                                  </div>
+                                        </div>
+                                        <h5 class="mt-4">Chuyên mục</h5>
+                                        <ul class="nav nav-pills flex-column">
+                                                  <li class="nav-item">
+                                                            <a class="nav-link active" href="#">Ôn lại ráp</a>
+                                                  </li>
+                                                  <li class="nav-item">
+                                                            <a class="nav-link " href="#">Chơi đồ ăn đường</a>
+                                                  </li>
+                                                  <li class="nav-item">
+                                                            <a class="nav-link" href="#">Cẩm nang cuộc sống</a>
+                                                  </li>
+                                        </ul>
+                              </aside>
+
+        <!-- MAIN CONTENT -->
+        <div class="col-md-8 bg-info text-white p-3">
+            <h5>Main content</h5>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="row">
+        <div class="col-12 bg-danger text-white p-3">
+            <h5>Footer</h5>
+        </div>
+    </div>
+
+</div>
 </body>
 </html>
+
+
