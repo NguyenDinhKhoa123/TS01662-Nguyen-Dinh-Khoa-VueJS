@@ -1,5 +1,5 @@
 <script setup>
-import HelloWorld from './components/Bai4.vue'
+import HelloWorld from './components/ontap.vue'
 </script>
 
 <template>

@@ -1,11 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Document</title>
+    <title>Bài 1 - Layout Full Width</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
-<body>
-          
+<body class="p-0 m-0">
+
+<div class="container-fluid p-0">
+    
+    <header class="row m-0 bg-warning p-4 fw-bold">
+        <div class="col">Header</div>
+    </header>
+
+    <nav class="row m-0 bg-primary p-3 text-white">
+        <div class="col">Nav</div>
+    </nav>
+
+    <section class="row m-0">
+        <aside class="col-4 bg-success p-5 text-white" style="min-height: 300px;">
+            Side bar
+        </aside>
+
+        <article class="col-8 bg-info p-5 text-white" style="min-height: 300px;">
+            Main content
+        </article>
+    </section>
+
+    <footer class="row m-0 bg-danger p-4 text-white">
+        <div class="col">Footer</div>
+    </footer>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
