@@ -1,7 +1,11 @@
 <script setup>
+import { ref } from 'vue'
+
 import rauCu from '../assets/images/rau-cu.jpg'
 import giaVi from '../assets/images/rau-cu2.jpg'
 import hat from '../assets/images/hat.jpg'
+
+const showPosts = ref(true)
 
 const items = [
   {
@@ -31,7 +35,18 @@ const items = [
       Kiến thức sức khỏe cộng đồng
     </h2>
 
-    <div class="row">
+    <!-- Nút Ẩn / Hiện bài đăng -->
+    <div class="text-center mb-4">
+      <button
+        class="btn btn-outline-primary"
+        @click="showPosts = !showPosts"
+      >
+        {{ showPosts ? 'Ẩn bài đăng' : 'Hiện bài đăng' }}
+      </button>
+    </div>
+
+    <!-- Danh sách bài viết -->
+    <div class="row" v-if="showPosts">
       <div
         class="col-md-4 mb-4"
         v-for="(item, index) in items"
@@ -48,7 +63,7 @@ const items = [
             <h5 class="card-title">{{ item.title }}</h5>
             <p class="card-text">{{ item.content }}</p>
 
-            <button class="btn btn-info mt-auto align-self-start">
+            <button class="btn btn-info mt-auto align-self-end">
               Xem chi tiết
             </button>
           </div>
