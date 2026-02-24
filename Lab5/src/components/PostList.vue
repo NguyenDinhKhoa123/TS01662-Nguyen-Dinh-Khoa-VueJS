@@ -5,7 +5,7 @@
     <div
       v-for="(post, index) in posts"
       :key="index"
-      class="card mb-3 p-3"
+      class="card p-3 mb-3"
       :class="{ 'border-danger': post.highlight }"
       :style="{ backgroundColor: post.highlight ? '#ffe6e6' : '#ffffff' }"
     >

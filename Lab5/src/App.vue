@@ -18,7 +18,14 @@ import { reactive } from 'vue'
 import CreatePost from './components/CreatePost.vue'
 import PostList from './components/PostList.vue'
 
-const posts = reactive([])
+const posts = reactive([
+  {
+    title: 'Bài viết đầu tiên',
+    author: 'Admin',
+    content: 'Đây là bài viết mẫu hiển thị khi ứng dụng khởi chạy.',
+    highlight: false
+  }
+])
 
 const addPost = (post) => {
   posts.push(post)
@@ -29,8 +36,9 @@ const toggleHighlight = (index) => {
 }
 </script>
 
+
 <!-- <script setup>
-import HelloWorld from './components/Bai1.vue'
+import HelloWorld from './components/Bai3.vue'
 </script>
 
 <template>

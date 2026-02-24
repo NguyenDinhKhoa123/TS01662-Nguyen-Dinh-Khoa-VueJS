@@ -1,18 +1,18 @@
-<script setup>
-</script>
-
 <template>
-  <h3>Trang chinh App.vue</h3>
+  <div>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+      <a class="navbar-brand">MyBlog</a>
 
-  <nav>
-    <RouterLink to="/">Go to Home</RouterLink>
-    <RouterLink to="/about">Go to About</RouterLink>
-  </nav>
+      <div class="navbar-nav">
+        <router-link to="/" class="nav-link">Home</router-link>
+        <router-link to="/blogs" class="nav-link">Blogs</router-link>
+        <router-link to="/profile/info" class="nav-link">Profile</router-link>
+        <router-link to="/dashboard" class="nav-link">Dashboard</router-link>
+      </div>
+    </nav>
 
-  <main>
-    <RouterView />
-  </main>
+    <!-- NƠI HIỂN THỊ CÁC TRANG -->
+    <router-view />
+  </div>
 </template>
-
-<style scoped>
-</style>

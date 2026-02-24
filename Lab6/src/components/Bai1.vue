@@ -5,7 +5,7 @@
 
     <input v-model.number="score" type="number" class="form-control mb-2" placeholder="Nhập điểm trung bình">
 
-    <p v-if="score < 5">Xếp loại: Yếu</p>
+    <p v-if="score < 5">Xếp loại: Yếu </p>
     <p v-else-if="score < 6.5">Xếp loại: Trung bình</p>
     <p v-else-if="score < 8">Xếp loại: Khá</p>
     <p v-else-if="score < 9">Xếp loại: Giỏi</p>
